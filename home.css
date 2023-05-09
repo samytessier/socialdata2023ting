@@ -1,0 +1,143 @@
+*{font-family: 'Lexend', sans-serif;}
+
+body{
+    background-image: url("https://pocket-image-cache.com/direct?url=https%3A%2F%2Fpocket-syndicated-images.s3.amazonaws.com%2F5ce5adbcce9a8.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+p{
+
+    margin-left: 0;
+    padding-left: 0;
+
+}
+
+body::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the last value (0.7) to change the opacity */
+    backdrop-filter: blur(5px); /* Adjust the value (5px) to change the blur amount */
+    z-index: -1;
+  }
+
+.markdown-style {
+    white-space: pre-wrap;
+    font-family: monospace;
+  }
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.image_div_1{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.page_title{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.md_text_wrapper{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.md_text{
+
+    width: 50%;
+
+}
+
+.image_duo{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+
+}
+
+.image_center_two{
+
+    width: 450px;
+    height: 320px;
+    padding: 5px;
+}
+.image_center{
+
+    max-width: 900px;
+    width: 900px;
+
+}
+
+.container_flex_child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+
+}
+
+.map_flex_container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: darkgrey;
+    padding: 15px;
+    border-radius: 15px;
+
+}
+
+.time_select{
+
+    width: 100%;
+    color: black;
+    background: lightgrey;
+    border: 1px solid darkgrey;
+    flex: 1.5 1.5 15%;
+    min-height: 15%;
+    font-size: 20px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.time_select_select{
+
+    margin: 0 10px;
+
+}
+.test_img{
+    width: 300px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map with Dropdown</title>
+</head>
+<body>
+    <div>
+        <label>Select time:</label>
+        <select id="time-dropdown">
+            {% for option in dropdown_options %}
+            <option value="{{ option }}" {% if option == selected_option %}selected{% endif %}>{{ option }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div>
+        <iframe id="map-iframe" src="{{ html_file }}" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        document.getElementById("time-dropdown").addEventListener("change", function (event) {
+            let selectedOption = event.target.value;
+            let url = "map_" + selectedOption + ".html";
+            document.getElementById("map-iframe").src = url;
+        });
+    </script>
+</body>
+</html>
